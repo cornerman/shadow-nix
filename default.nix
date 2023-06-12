@@ -21,7 +21,7 @@ in stdenv.mkDerivation rec {
   pname = "shadow-${shadowChannel}";
   version = info.version;
   src = fetchurl (utilities.shadowApi.getDownloadInfo info);
-  binaryName = "shadow-launcher";
+  binaryName = "ShadowPCDisplayr";
   channel = shadowChannel;
 
   # Add all hooks
